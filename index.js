@@ -1,3 +1,5 @@
+window.onload = function(){
+
 var
   camera,
   scene,
@@ -58,3 +60,5 @@ function initialize() {
 
   document.body.appendChild(renderer.domElement);
 }
+
+};
