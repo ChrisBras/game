@@ -27,6 +27,7 @@ function initialize() {
     i, j, uvs;
 
   camera = new THREE.Camera( 3, window.innerWidth / window.innerHeight, -2000, 10000 );
+  camera.projectionMatrix = THREE.Matrix4.makeOrtho( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, - 2000, 10000 );
   camera.position.x = 100;
   camera.position.y = 70.711; // 30 degree angle from the xz plane
   camera.position.z = 100;
