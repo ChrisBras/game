@@ -27,7 +27,8 @@ function initialize() {
     i, j, uvs;
 
   camera = new THREE.Camera( 3, window.innerWidth / window.innerHeight, -2000, 10000 );
-  camera.projectionMatrix = new THREE.Matrix4.makeOrthographic( 
+  var ma4 = new THREE.Matrix4();
+  camera.projectionMatrix = new ma4.makeOrthographic( 
     window.innerWidth / -2, 
     window.innerWidth / 2, 
     window.innerHeight / 2, 
